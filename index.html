@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techtack-Technologies - Workflow Beta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <!-- Logo -->
+                    <div>
+                        <a href="#" class="flex items-center py-5 px-2 text-gray-700">
+                            <svg class="h-6 w-6 mr-1 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            <span class="font-bold">Techtack-Technologies</span>
+                        </a>
+                    </div>
+
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                        <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">About</a>
+                        <a href="" class="py-5 px-3 text-gray-700 hover:text-gray-900">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Secondary Navbar items -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="" class="py-2 px-3 bg-blue-500 text-white rounded hover:bg-blue-400">Login</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+        <a href="" class="block py-2 px-4 text-sm hover:bg-gray-200">Home</a>
+        <a href="" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
+        <a href="" class="block py-2 px-4 text-sm hover:bg-gray-200">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between py-12">
+                <div class="max-w-lg">
+                    <h1 class="text-3xl font-bold text-gray-900">Welcome to techtack-technologies - workflow</h1>
+                    <p class="mt-4 text-gray-600">At TechTack Technologies, we are pioneers in delivering cutting-edge
+                        technology solutions that empower businesses to thrive in a digital world. Our mission is to
+                        provide innovative, scalable, and reliable IT services that meet the unique needs of each
+                        client, driving growth and efficiency.</p>
+                    <a href="#" class="mt-6 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400">Get
+                        Started</a>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://via.placeholder.com/500" alt="Hero Image" class="w-96">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <p class="text-sm">© 2023 Powered By TeamLitho. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
